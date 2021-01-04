@@ -16,6 +16,8 @@ Training data for bot
 	create response for intent in domain.yml
 	Add response you created under actions in domain.yml
 	Create story in stories.yml
-	
+
 	After making changes make sure to Train bot
 		$ rasa train
+		A model will be created everytime you train the model and to ignore the models directory.
+			Add "models/" (without " ") in .git/info/exclude file to ignore all the Training models that we train
