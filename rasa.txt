@@ -1,0 +1,21 @@
+If you have clonned or copied the project then you dont have to initialize the bot.
+To initialize rasa:
+	$ rasa init
+
+To run rasa(bot) in shell:
+	$ rasa shell
+To run rasa(bot) interactive:
+	$ rasa x
+
+How to use action.py
+	uncomment line starting action_endpoint in endpoint.yml
+
+Training data for bot
+	create intents in nlu.yml
+	add the intent you created in domain.yml
+	create response for intent in domain.yml
+	Add response you created under actions in domain.yml
+	Create story in stories.yml
+	
+	After making changes make sure to Train bot
+		$ rasa train
